@@ -1,8 +1,8 @@
 const CACHE_NAME = 'ie-transmissao-v1';
 const assets = [
-  '/',
-  '/index.html',
-  '/manifest.json'
+  './',             // Aponta para a pasta atual (transmissaoiels)
+  './index.html',   // Caminho relativo
+  './manifest.json' // Caminho relativo
 ];
 
 // Instala o service worker e guarda os arquivos em cache
