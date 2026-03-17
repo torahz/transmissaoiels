@@ -2,7 +2,7 @@
   "name": "Transmissão IE",
   "short_name": "Transmissão",
   "description": "Checklist de transmissão da Igreja Esperança",
-  "start_url": "/index.html",
+  "start_url": "https://torahz.github.io/transmissaoiels/",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#121212",
