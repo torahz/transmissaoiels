@@ -202,14 +202,18 @@
             }
         }
 
-        // Registro do Service Worker para o PWA funcionar offline
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js').then((reg) => {
-                    console.log('Service worker registrado.', reg);
-                });
+// Registro do Service Worker com escopo explícito
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js', { scope: './' })
+            .then((reg) => {
+                console.log('Service worker registrado com sucesso!', reg);
+            })
+            .catch((err) => {
+                console.log('Falha ao registrar o Service Worker:', err);
             });
-        }
+    });
+}
     </script>
 </body>
 </html>
